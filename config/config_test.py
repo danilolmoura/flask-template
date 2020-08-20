@@ -6,7 +6,7 @@ class ConfigTest(Config):
     DEVELOPMENT = True
     DEBUG = True
     TESTING = True
-    FLASK_ENV = 'test'
+    FLASK_ENV = 'testing'
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://{}:{}@{}/{}'.format(
         os.environ['POSTGRES_USER_TEST'],
         os.environ['POSTGRES_PASSWORD_TEST'],

@@ -5,7 +5,7 @@ from . import Config
 class ConfigProd(Config):
     DEVELOPMENT = False
     DEBUG = False
-    FLASK_ENV = 'prod'
+    FLASK_ENV = 'production'
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://{}:{}@{}/{}'.format(
         os.environ['POSTGRES_USER_PROD'],
         os.environ['POSTGRES_PASSWORD_PROD'],
